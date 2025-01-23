@@ -20,3 +20,11 @@
     box-sizing: border-box;
     font-family: Montserrat, sans-serif;
 }
+
+.nav-link {
+    @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block hidden;
+}
+
+.nav-link::after {
+    @apply block content-[''] absolute bottom-[-31px] h-[4px] bg-green-light w-full scale-x-0 hover:scale-x-100 transition duration-300 origin-center;
+}
