@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --green-dark: #273538;
+    --green-light: #6AB29E;
+    --green-medium: #4A8A79;
+    --green-light-pale: #7C9B93;
+    --green-blue : #98CACB;
+    --white-light: #FDFEFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat, sans-serif;
+}

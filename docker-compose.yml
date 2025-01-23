@@ -1,0 +1,31 @@
+services:
+  mariadb:
+    image: mariadb:latest
+    container_name: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: cesizen_db
+      MYSQL_USER: neiko
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: mariadb
+      PMA_PORT: 3306
+      PMA_USER: neiko
+      PMA_PASSWORD: password
+    ports:
+      - "8081:80"
+    volumes:
+      - /home/neiko/phpmyadminthemes/boodark:/var/www/html/themes/boodark
+
+volumes:
+  mariadb_data:
