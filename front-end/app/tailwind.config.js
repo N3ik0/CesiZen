@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      dropShadow: {
+        'custom-white': '0px 4px 4px rgba(255, 255, 255, 0.25)',
+        'custom-yellow': '0px 4px 4px rgba(255, 255, 0, 0.25)',
+      },
       maxWidth: {
         '7.5xl': '1450px',
       },
