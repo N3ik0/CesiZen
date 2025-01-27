@@ -57,5 +57,5 @@ body {
 }
 
 .nav-link::after {
-    @apply block content-[''] absolute bottom-[-31px] h-[4px] bg-green-light w-full scale-x-0 hover:scale-x-100 transition duration-300 origin-center;
+    @apply block content-[''] absolute bottom-[-31px] h-[4px] bg-yellow-100 w-full scale-x-0 hover:scale-x-100 transition duration-300 origin-center;
 }
