@@ -1,6 +1,9 @@
 .perks {
-    position: relative;
-    top: -150px;
     background-color: rgba(255, 255, 255, 0.041);
     backdrop-filter: blur(50px);
+}
+
+.perks-container{
+    position: relative;
+    top: -150px;
 }
